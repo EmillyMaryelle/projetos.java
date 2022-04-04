@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+
+public class pj1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int primeiro, segundo, terceiro; //variaveis de armazenamento
+
+        // Entrada de dados
+
+        System.out.print("Entre com o primeiro inteiro: ");
+        primeiro = sc.nextInt();
+        System.out.print("Entre com o segundo inteiro: ");
+        segundo = sc.nextInt();
+        System.out.print("Entre com o terceiro inteiro: ");
+        terceiro = sc.nextInt();
+        
+        
+        
+        //Laço de repetição
+        if (primeiro > segundo) {
+            if (primeiro > terceiro) {
+                if (segundo < terceiro) {
+                    System.out.println("O menor numero e: " + segundo);
+                } else {
+                    System.out.println("O menor numero e: " + terceiro);
+                }
+                System.out.println("O maior numero e: " + primeiro);
+            } else {
+                if (primeiro < segundo) {
+                    System.out.println("O menor numero e: " + primeiro);
+                } else {
+                    System.out.println("O menor numero e: " + segundo);
+                }
+                System.out.println("O maior numero e: " + terceiro);
+            }
+        } else {
+            if (segundo > terceiro) {
+                if (primeiro < terceiro) {
+                    System.out.println("O menor numero e: " + primeiro);
+                } else {
+                    System.out.println("O menor numero e: " + terceiro);
+                }
+                System.out.println("O maior numero e: " + segundo);
+            } else {
+                if (primeiro < segundo) {
+                    System.out.println("O menor numero e: " + primeiro);
+                } else {
+                    System.out.println("O menor numero e: " + segundo);
+                }
+                System.out.println("O maior numero e: " + terceiro);
+            }
+        }
+    }
+}
